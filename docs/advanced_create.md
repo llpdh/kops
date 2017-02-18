@@ -12,6 +12,7 @@ kops create cluster \
     --master-size t2.medium \
     --node-security-groups sg-12345678 \
     --master-security-groups sg-12345678,i-abcd1234 \
+    --additional-sans example.com,extra.example.com \
     --topology private \
     --networking weave \
     --image 293135079892/k8s-1.4-debian-jessie-amd64-hvm-ebs-2016-11-16 \
